@@ -29,5 +29,5 @@ sudo update-rc.d amazon-dash.sh defaults
 # See http://www.cronmaker.com/
 # See https://www.raspberrypi.org/documentation/linux/usage/cron.md
 # http://www.linuxquestions.org/questions/linux-software-2/writing-a-crontab-file-111381/#post574981
-cronjob = "0 0 2 1/1 * ? * git clone https://github.com/jalhadeff/raspberry-amazon-dash.git && mv amazon-dash.sh /etc/init.d/"
-sudo echo cronjob >> /etc/crontab
+cronjob = "0 0 2 1/1 * ? * git clone https://github.com/jalhadeff/raspberry-amazon-dash.git && sudo mv amazon-dash.sh /etc/init.d/"
+sudo echo $cronjob >> /etc/crontab
